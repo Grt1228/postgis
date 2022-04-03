@@ -1,3 +1,6 @@
+
+-- 先创建数据库，然后执行创建插件postgis
+CREATE EXTENSION postgis;
 -- auto-generated definition
 create table t_store
 (

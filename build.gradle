@@ -25,6 +25,7 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     compile group: 'com.baomidou', name: 'mybatis-plus-boot-starter', version: '3.5.1'
+    // postgis 插件依赖包
     compile group: 'net.postgis', name: 'postgis-jdbc', version: '2.5.1'
     compile group: 'org.postgresql', name: 'postgresql'
 }
