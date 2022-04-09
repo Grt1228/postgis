@@ -28,4 +28,6 @@ dependencies {
     // postgis 插件依赖包
     compile group: 'net.postgis', name: 'postgis-jdbc', version: '2.5.1'
     compile group: 'org.postgresql', name: 'postgresql'
+    //配置文件加密包
+    compile group: 'com.github.ulisesbocchio', name: 'jasypt-spring-boot-starter', version: '3.0.4'
 }

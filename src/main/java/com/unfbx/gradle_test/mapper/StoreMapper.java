@@ -6,10 +6,15 @@ import com.unfbx.gradle_test.controller.resp.StoreResp;
 import com.unfbx.gradle_test.pojo.Store;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
 
 @Mapper
 public interface StoreMapper extends BaseMapper<Store> {
     List<StoreResp> queryList(@Param("req") StoreReq req);
+
+    @Select("select version();")
+    String dbVersion();
+
 }
